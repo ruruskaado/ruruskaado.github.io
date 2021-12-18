@@ -1,15 +1,58 @@
 <!DOCTYPE html>
+<html lang="en_US">
+
+<!-- 1px in game = 4px -->
 
 <head>
-    <title>test</title>
-    <link rel="icon" href="https://billwurtz.com/100_0123.JPG">
-
-    <style>
-        body {color:black; background-color:#ccc; size:10px}
-    </style>
+    <meta charset="utf-8">
+    <title>Rouxls Kaard dump</title>
+    <link rel="icon" href="media/ruruskaado.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 style="color:#4d4d4d">welcome to my cool treehouse</h1>
-    
+    <header>
+        <h1>I am taking a web development course and have barely touched JavaScript. Placeholder for now</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <div id="char">
+                <!-- 1024 * 244, border width: 4px 4px 0 -->
+
+                <!-- menu captions -->
+                <img src="media/captions/char.png" class="captions" id="charimg" draggable="false">
+        
+                <!-- power menu character icons -->
+                <div id="pfp">
+                    <span class="pfp" tabindex="0">
+                        <img src="media/menu rouxls.png" class="pfp">
+                        <img src="media/heartarrows.gif" class="heartarrows">
+                    </span>
+                    <span class="pfp" tabindex="0">
+                        <img src="media/spamt.png" class="pfp">
+                        <img src="media/heartarrows.gif" class="pfp heartarrows">
+                    </span>
+                    <span class="pfp" tabindex="0">
+                        <img src="media/swatch.png" class="pfp">
+                        <img src="media/heartarrows.gif" class="pfp heartarrows">
+                    </span>
+                </div>
+
+                <div class="desc">LV1 Pathetic Guy<br>they're all scrunklies.</div>
+            </div>
+        
+            <div id="stats">
+                <!-- Top text is 32px below border -->
+            </div>
+
+            <div id="spells"></div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
 </body>
+
+</html>
