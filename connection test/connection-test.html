@@ -1,0 +1,77 @@
+<body>
+    <style>
+        body {
+            margin-top: 80px;
+            background-color: black;
+            font-size: 4em;
+            font-family: "Determination Mono Web";
+            text-align: center;
+            color: white;
+        }
+
+
+
+        input {
+            background-color: black;
+            width: 6.5em;
+            font-size: 1em;
+            font-family: "Determination Mono Web";
+            text-align: center;
+            color: white;
+            border: 4px solid;
+            margin-top: 12px;
+        }
+
+
+        form {
+            width: max-content;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        
+        #btns {display: flex; justify-content: space-around; margin-top: 18px;}
+        #btns button {
+            all: unset;
+            font-size: 0.7em;
+        } #btns button:hover {
+            cursor: pointer;
+        }
+    </style>
+
+    <title>CONNECTION TEST</title>
+
+    <form action="https://youtube.com/watch?v=dQw">
+        <label for="user">PLEASE ENTER<br>YOUR OWN NAME.</label><br>
+        <input type="text" id="user" minlength="1" maxlength="12">
+
+        <div id="btns">
+            <button id="return">RETURN</button>
+            <button id="proceed">PROCEED</button>
+        </div>
+    </form>
+
+    <script>
+        const user = document.querySelector('#user');
+        const max = user.maxLength;
+
+        const back = document.querySelector('#return');
+        const proceed = document.querySelector('#proceed');
+
+        user.addEventListener('input', function (e) {
+            v = user.value.toLowerCase()
+            if (v === 'gaster') {
+                user.value = ''
+                user.style.color = 'unset';
+            } else if (v.length === max) {
+                user.style.color = 'yellow';
+            } else {
+                user.style = 'none';
+            }
+        })
+
+        back.addEventListener('click', function (e) {
+            e.preventDefault()
+        })
+    </script>
+</body>
